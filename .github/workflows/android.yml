@@ -29,6 +29,9 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: gradle
+    - name: Clean and Build
+      run: |
+       ./gradlew clean publishToMavenLocal --no-build-cache
 
     - name: Build with Gradle
       run: |
