@@ -2,7 +2,7 @@ name: Android CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "context" ]
   workflow_dispatch:
 
 permissions:
